@@ -6,25 +6,30 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView2"
+
+    <ImageView
+        android:id="@+id/cook"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/union"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:visibility="visible"
+        android:layout_height="1000dp"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.162" />
+        app:layout_constraintVertical_bias="0.665"
+        app:srcCompat="@drawable/cook"
+        tools:ignore="VisualLintBounds" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="168dp"
         android:layout_height="48dp"
         android:layout_marginTop="68dp"
+        android:backgroundTint="@color/black1"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/submit"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -38,24 +43,64 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:ems="10"
+        android:importantForAutofill="no"
         android:inputType="text"
+        android:textColor="@color/white1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.574"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/enter_your_name"
+        android:textColor="@color/white1"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.327"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/only"
+        android:textColor="@color/white1"
+        android:textSize="60sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/cook"
+        android:textColor="@color/black1"
+        android:textSize="60sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,6 +1,8 @@
 <resources>
     <string name="app_name">UTS</string>
-    <string name="submit">SUBMIT</string>
+    <string name="submit">Submit</string>
     <string name="union">UNION</string>
+    <string name="only">Only</string>
+    <string name="cook">Cook</string>
     <string name="enter_your_name">Enter Your Name</string>
 </resources>
