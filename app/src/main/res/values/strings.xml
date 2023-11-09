@@ -14,4 +14,7 @@
     <string name="email">Email :</string>
     <string name="age_age">Age Age</string>
     <string name="email_email">Email Email</string>
+    <string name="logout">Logout</string>
+    <string name="setting">Setting</string>
+    <string name="gatau">Gatau</string>
 </resources>
