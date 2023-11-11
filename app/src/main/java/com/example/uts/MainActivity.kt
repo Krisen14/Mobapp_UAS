@@ -14,8 +14,8 @@ import android.widget.Toast
 class MainActivity : AppCompatActivity() {
 
     private lateinit var nameEditText: EditText
+    private lateinit var passwordEditText: EditText
     private lateinit var loginButton: Button
-
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -24,6 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         nameEditText = findViewById(R.id.textInput)
         loginButton = findViewById(R.id.btn1)
+        passwordEditText = findViewById(R.id.pwinput)
 
 
 
@@ -45,7 +46,7 @@ class MainActivity : AppCompatActivity() {
 
 
         loginButton.setOnClickListener {
-            val name = nameEditText.text.toString()
+            val name = passwordEditText.text.toString()
             if (name.isNotBlank()) {
 
                 val intent = Intent(this, HomeActivity::class.java)
@@ -54,6 +55,41 @@ class MainActivity : AppCompatActivity() {
             } else {
 
                 Toast.makeText(this, "Name cannot be empty", Toast.LENGTH_SHORT).show()
+            }
+
+            passwordEditText.addTextChangedListener(object : TextWatcher {
+                override fun beforeTextChanged(
+                    s: CharSequence?,
+                    start: Int,
+                    count: Int,
+                    after: Int
+                ) {
+                    // No action needed
+                }
+
+                override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {
+
+                    val isNameEmpty = s.isNullOrBlank()
+                    loginButton.isEnabled = !isNameEmpty
+                }
+
+                override fun afterTextChanged(s: Editable?) {
+
+                }
+            })
+
+
+            loginButton.setOnClickListener {
+                val pw = passwordEditText.text.toString()
+                if (pw.isNotBlank()) {
+
+                    val intent = Intent(this, HomeActivity::class.java)
+                    intent.putExtra("NAME", pw)
+                    startActivity(intent)
+                } else {
+
+                    Toast.makeText(this, "Password cannot be empty", Toast.LENGTH_SHORT).show()
+                }
             }
         }
     }

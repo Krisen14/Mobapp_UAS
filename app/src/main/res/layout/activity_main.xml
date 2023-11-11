@@ -4,38 +4,50 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/black2"
     tools:context=".MainActivity">
 
+    <!--    <ImageView-->
+<!--        android:id="@+id/cook"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="1000dp"-->
+<!--        android:scaleType="centerCrop"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintVertical_bias="0.665"-->
+<!--        app:srcCompat="@drawable/cook"-->
+<!--        tools:ignore="VisualLintBounds" />-->
 
     <ImageView
-        android:id="@+id/cook"
-        android:layout_width="wrap_content"
-        android:layout_height="1000dp"
-        android:scaleType="centerCrop"
+        android:id="@+id/imageView2"
+        android:layout_width="409dp"
+        android:layout_height="550dp"
+        android:src="@drawable/outline_main"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.665"
-        app:srcCompat="@drawable/cook"
-        tools:ignore="VisualLintBounds" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ContentDescription" />
 
     <Button
         android:id="@+id/btn1"
         android:layout_width="168dp"
         android:layout_height="48dp"
         android:layout_marginTop="68dp"
-        android:backgroundTint="@color/black1"
+        android:backgroundTint="@color/white2"
         android:fontFamily="sans-serif-medium"
         android:text="@string/submit"
-        android:textColor="@color/white"
+        android:textColor="@color/black2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.629"
+        app:layout_constraintVertical_bias="0.819"
         tools:ignore="MissingConstraints,VisualLintOverlap" />
 
     <EditText
@@ -48,10 +60,26 @@
         android:textColor="@color/white1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.452"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.574"
+        app:layout_constraintVertical_bias="0.426"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/pwinput"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:textColor="@color/white1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.457"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.625"
         tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <TextView
@@ -60,47 +88,44 @@
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
         android:text="@string/enter_your_name"
-        android:textColor="@color/white"
+        android:textColor="@color/black2"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.327"
+        app:layout_constraintHorizontal_bias="0.298"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.358"
+        tools:ignore="VisualLintOverlap" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"
-        android:text="@string/only"
-        android:textColor="@color/white1"
-        android:textSize="60sp"
+        android:text="@string/enter_your_password"
+        android:textColor="@color/black2"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.267"
+        app:layout_constraintHorizontal_bias="0.32"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.546" />
 
-    <TextView
-        android:id="@+id/textView3"
+    <ImageView
+        android:id="@+id/imageView3"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-medium"
-        android:text="@string/cook"
-        android:textColor="@color/black1"
-        android:textSize="60sp"
-        android:textStyle="italic"
+        android:layout_height="300dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.739"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.164"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/onlycook"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
