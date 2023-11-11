@@ -8,6 +8,18 @@
     android:background="@color/black2"
     tools:context=".ProfileFragment">
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:src="@drawable/outline2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.104" />
+
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="409dp"
         android:layout_height="439dp"
@@ -23,11 +35,11 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/titillium_web_light"
         android:text="User"
-        android:textColor="@color/white1"
-        android:textSize="35dp"
+        android:textColor="@color/black2"
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintHorizontal_bias="0.447"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.103" />
@@ -37,19 +49,19 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="luolangcina@gmail.com"
-        android:textColor="@color/white1"
-        android:textSize="20dp"
+        android:textColor="@color/black2"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.582"
+        app:layout_constraintHorizontal_bias="0.64"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198" />
+        app:layout_constraintVertical_bias="0.195" />
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="34dp"
-        android:layout_height="40dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
         android:layout_marginStart="115dp"
         android:background="@drawable/icon_background"
         android:src="@drawable/baseline_edit_note_24"
@@ -59,5 +71,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.101" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
